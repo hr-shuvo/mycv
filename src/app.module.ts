@@ -18,7 +18,7 @@ import { Report } from './reports/report.entity';
       ],
       synchronize: true
     }),
-    UsersModule, 
+    UsersModule,
     ReportsModule
   ],
   controllers: [AppController],
