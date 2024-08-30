@@ -4,7 +4,7 @@ import { AfterInsert, AfterRemove, AfterUpdate, Column, Entity, PrimaryGenerated
 @Entity()
 export class User{
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     email:string;
@@ -21,7 +21,7 @@ export class User{
     logRemove(){
         console.log('Removed User with id: ', this.id);
     }
-    
+
     @AfterUpdate()
     logUpdate(){
         console.log('Updated User with id: ', this.id);
